@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jhansiasafetyqueen" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".menu"
+            android:exported="false"
+            android:label="@string/title_activity_menu" />
+        <activity
+            android:name=".SirensActivity"
+            android:parentActivityName=".MainScreen" />
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".MainScreen" />
+        <activity
+            android:name=".VideoActivity"
+            android:parentActivityName=".MainScreen" />
+        <activity
+            android:name=".dialing"
+            android:exported="false" />
+        <activity
+            android:name=".calling"
+            android:exported="false" />
+        <activity
+            android:name=".FakeCallActivity"
+            android:parentActivityName=".MainScreen" />
+        <activity
+            android:name=".UpdatemyAccount"
+            android:parentActivityName=".MainScreen" />
+        <activity
+            android:name=".RecordActivity"
+            android:parentActivityName=".MainScreen" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".About_Us"
+            android:parentActivityName=".MainScreen" />
+        <activity
+            android:name=".Rating_App"
+            android:parentActivityName=".MainScreen" />
+        <activity
+            android:name=".About_App"
+            android:parentActivityName=".MainScreen" />
+        <activity
+            android:name=".TermsConditions"
+            android:parentActivityName=".MainScreen" />
+        <activity android:name=".MainScreen" />
+        <activity
+            android:name=".ResetPassword"
+            android:parentActivityName=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".SMS" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAgBBjQnxq0cLZCH1QwZbvjed6W7X0CgRA" />
+    </application>
+
+</manifest>

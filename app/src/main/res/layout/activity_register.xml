@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    tools:context=".Register">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="386dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="25dp" />
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="483dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="270dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/passwordshape"
+            android:ems="10"
+            android:fontFamily="@font/source_serif_pro"
+            android:hint="Name"
+            android:inputType="text"
+            android:paddingLeft="25dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/pass_box"
+            app:layout_constraintEnd_toEndOf="@+id/pass_box"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pass_box" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="270dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/passwordshape"
+            android:ems="10"
+            android:fontFamily="@font/source_serif_pro"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="25dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/pass_box"
+            app:layout_constraintEnd_toEndOf="@+id/pass_box"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pass_box" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="270dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/passwordshape"
+            android:ems="10"
+            android:fontFamily="@font/source_serif_pro"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:paddingLeft="25dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/pass_box"
+            app:layout_constraintEnd_toEndOf="@+id/pass_box"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pass_box" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="270dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/passwordshape"
+            android:drawableRight="@drawable/visibility_off"
+            android:drawableTint="#66000000"
+            android:ems="10"
+            android:fontFamily="@font/source_serif_pro"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/pass_box"
+            app:layout_constraintEnd_toEndOf="@+id/pass_box"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pass_box" />
+
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="270dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/passwordshape"
+            android:drawableRight="@drawable/visibility_off"
+            android:drawableTint="#66000000"
+            android:ems="10"
+            android:fontFamily="@font/source_serif_pro"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/pass_box"
+            app:layout_constraintEnd_toEndOf="@+id/pass_box"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pass_box" />
+
+
+        <include
+            android:id="@+id/login_button"
+            layout="@layout/progress_button"
+            android:layout_width="120dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_serif_pro"
+                android:text="Already have an account?   "
+                android:textColor="@color/bluish_black"
+
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_serif_pro"
+                android:text="Sign In"
+                android:textColor="#BF3556"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

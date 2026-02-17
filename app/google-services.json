@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "173291550518",
+    "firebase_url": "https://jhansiasafetyqueen-f0a98-default-rtdb.firebaseio.com",
+    "project_id": "jhansiasafetyqueen-f0a98",
+    "storage_bucket": "jhansiasafetyqueen-f0a98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173291550518:android:32e785a33d8b452c0e6597",
+        "android_client_info": {
+          "package_name": "com.example.jhansiasafetyqueen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsSB3CYexI7IS7ogiP0CR-r1gu9HaCBig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
